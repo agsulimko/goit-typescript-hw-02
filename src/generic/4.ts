@@ -2,7 +2,7 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
-interface IProps{
+interface IPageProps{
   title: string;
 }
 class Component<T> {
@@ -11,7 +11,7 @@ class Component<T> {
   }
 }
 
-class Page extends Component<IProps>{
+class Page extends Component<IPageProps>{
   pageInfo():void {
     console.log(this.props.title);
   }
